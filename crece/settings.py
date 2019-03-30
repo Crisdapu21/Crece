@@ -51,11 +51,11 @@ MESSAGE_LEVEL = message_constants.DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd79knnq5hgvt4',
-        'USER': 'btpipfnhwapuva',
-        'PASSWORD': '43a1b3a8421d532893b50b256a12cf4461e751676f361356fe879dc6a8cfa34f',
-        'HOST': 'ec2-174-129-224-33.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
@@ -75,7 +75,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 DEBUG = True
-ALLOWED_HOSTS = ["localhost",'creceperu.com.pe','www.creceperu.com.pe']
+ALLOWED_HOSTS = ['creceperu.com.pe','www.creceperu.com.pe']
 
 ROOT_URLCONF = 'crece.urls'
 WSGI_APPLICATION = 'crece.wsgi.application'
@@ -87,7 +87,6 @@ USE_L10N = True
 USE_TZ = True
 
 URL = "http://creceperu.com.pe/"
-#URL = "http://localhost:8000/"
 STATIC_URL = '/static/'
 STATICFILES_DIRS= [BASE_DIR+ '/static/']
 MEDIA_URL = '/media/'
@@ -104,6 +103,6 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'comunidad@crece.uss.edu.pe '
-EMAIL_HOST_PASSWORD = '*comunidaduss2017*'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
